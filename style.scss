@@ -52,17 +52,15 @@ $white: #fff;
 body {
   @include font-base;
   line-height: 1.6;
-
+  
   display: grid;
-  // grid-template-rows: 10em 50vh auto 10em;
-  // grid-template-columns: 1fr 5fr 2fr 1fr;
   grid-template: 
-  "header header header header" 10em
-  "hero hero hero hero" 50vh
-  ". main sidebar ." auto
-  "footer footer footer footer" 10em 
-  / 1fr 5fr 2fr 1fr;
-  column-gap: 1.5rem;
+    "header header header header" 10em
+    "hero hero hero hero" 50vh
+    ". main sidebar ." auto
+    "footer footer footer footer" 10em 
+    / 1fr minmax(30em, 5fr) minmax(15em, 2fr) 1fr;
+  column-gap: 1.5em;
 }
 
 header {
@@ -128,6 +126,7 @@ footer {
   column-gap: 1.5em;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
   padding: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .card-img {
