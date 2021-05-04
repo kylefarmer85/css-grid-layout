@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,900|Six+Caps");
+body {
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #252525;
+  line-height: 1.6;
+  display: grid;
+  grid-template-rows: 10em 50vh auto 10em;
+  grid-template-columns: 1fr 5fr 2fr 1fr;
+}
+/*# sourceMappingURL=style.css.map */
